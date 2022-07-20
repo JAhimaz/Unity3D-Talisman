@@ -55,7 +55,7 @@ function App() {
     const injector = await web3FromAddress(SENDER);
 
     api.tx.balances
-      .transfer("Drz4y4uG7mZ54WgP2pPCQuC5rnXY9fEcJoesLFSuBRzNAgC", 123)
+      .transfer("Drz4y4uG7mZ54WgP2pPCQuC5rnXY9fEcJoesLFSuBRzNAgC", 102000000000)
       .signAndSend(SENDER, { signer: injector.signer }, ({ status, events }) => {
         if (status.isInBlock || status.isFinalized) {
           events
@@ -115,7 +115,7 @@ function App() {
 
   return (
     <div className="App">
-      <h3>Kheops Kebabverse 🥙</h3>
+      <h3 >Kheops Kebabverse 🥙</h3>
       {
         accountsConnected.length === 0 ? <p>Connect an Account</p> : (
           <Unity className='UnityGame' unityProvider={unityProvider} />

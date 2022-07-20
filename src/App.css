@@ -1,5 +1,8 @@
 .App {
-  background-color: #282c34;
+  background-image: url('./important.png');
+  background-repeat: none;
+  background-size: cover;
+  /* background-size: 300px; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,6 +13,6 @@
 }
 
 .UnityGame {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
 }
